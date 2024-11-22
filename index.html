@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      img{
+        width: 500px;
+      }
+    </style>
+</head>
+<body>
+  <header>
+        <button onclick="colorBlue()">Blue</button>
+        <button onclick="colorPink()">Pink</button>
+        <button onclick="colorBrown()">Brown</button>
+     </header>   
+  <img id="image" src="" alt="">
+  <p id="text"></p>
+
+        <script>
+            function colorBlue()
+{
+    document.body.style.background="blue";
+    document.getElementById("image").src= "image/levi.jpg";
+    document.getElementById("text").innerHTML= "The only thing we're allowed to do is to believe that we won't regret the choice we made.";
+}
+
+          function colorPink(){
+          document.body.style.background="pink";
+          document.getElementById("image").src= "image/maki.jpg"
+          document.getElementById("text").innerHTML= "When it comes to my life, I decide what I do with it.";
+          }
+          function colorBrown(){
+            document.body.style.background="brown";
+            document.getElementById("image").src= "image/hakurou.jpg"
+            document.getElementById("text").innerHTML= "A sword wields no strength unless the hand that holds it has courage.";
+          }
+        </script>
+</body>
+</html>  
