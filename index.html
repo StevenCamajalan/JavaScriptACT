@@ -8,6 +8,18 @@
       img{
         width: 500px;
       }
+      h3{
+        font-size: 1rem;
+        font-style: italic;
+      }
+      h2{
+        font-size: 2rem;
+        font-style: italic;
+      }
+      h1{
+        font-size: 3rem;
+        font-style: italic;
+      }
     </style>
 </head>
 <body>
@@ -18,24 +30,28 @@
      </header>   
   <img id="image" src="" alt="">
   <p id="text"></p>
+  <h3 id="pr"></h3>
 
         <script>
             function colorBlue()
-{
+{   
     document.body.style.background="blue";
-    document.getElementById("image").src= "image/levi.jpg";
-    document.getElementById("text").innerHTML= "The only thing we're allowed to do is to believe that we won't regret the choice we made.";
+    document.getElementById("image").src= "image/levi.jpg"; 
+    document.getElementById("text").innerHTML= ("<h3>The only thing we're allowed to do is to believe that we won't regret the choice we made.</h3>");
+    document.getElementById("pr").innerHTML = ("<h3>Levi</h3>")
 }
 
           function colorPink(){
           document.body.style.background="pink";
           document.getElementById("image").src= "image/maki.jpg"
-          document.getElementById("text").innerHTML= "When it comes to my life, I decide what I do with it.";
+          document.getElementById("text").innerHTML= ("<h2>When it comes to my life, I decide what I do with it.</h2>")
+          document.getElementById("pr").innerHTML= ("<h2>Maki</h2>")
           }
           function colorBrown(){
             document.body.style.background="brown";
             document.getElementById("image").src= "image/hakurou.jpg"
-            document.getElementById("text").innerHTML= "A sword wields no strength unless the hand that holds it has courage.";
+            document.getElementById("text").innerHTML= ("<h1>A sword wields no strength unless the hand that holds it has courage.</h1>")
+            document.getElementById("pr").innerHTML= ("<h1>Hakurou</h1>")
           }
         </script>
 </body>
